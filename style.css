@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #4C516D;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #4C516D;
+}
+
+h3{
+    font-style: 20px;
+    color: #4C516D;
+    text-align: center;
+}
+
+h6{
+    font-weight: 700;
+    font-style: 12px;
+}
+
+p{
+    font-style: 16px;
+    color: #4C516D;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #ADD8E6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#page-header.about-header {
+    background-image: url("img/storeimg.jpeg");
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 100%;
+    background-position: top 20% right 0%;
+    display: flex;
+    background-size: cover;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head div{
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+#about-head .box h1, h3 {
+    text-align: left;
+    word-spacing: 0.1cm;
+    letter-spacing: 0.03cm;
+}
+
+/*Navbar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: x-large;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-style: 16px;
+    font-weight: 600;
+    color: azure;
+    transition: 0.3s ease;
+}
+
+#navbar .active {
+    color: palevioletred;
+}
+
+#navbar li a:hover, #navbar li a:active{
+    color: palevioletred;
+}
+
+#navbar li a:active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ADD8E6;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/*Home Page*/
+#hero{
+    background-image: url("img/kotoko.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero button{
+    background-color: #ADD8E6; 
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#hero button:hover,
+#hero button:focus {
+  background-color: palevioletred;
+}
+
+footer {
+    background-color: #ADD8E6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-style: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a{
+    color: #4C516D;
+    justify-content: center;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: color 0.2s;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+}
+
+.socials a:hover{
+    color: palevioletred;
+}
+
+.footer-bottom{
+    background: #ADD8E6;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
+
+/*Fishes Page*/
+.box{
+    padding: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55/12%);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.35s ease;
+}
+
+.box img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    display: flex;
+    word-spacing: 0.1cm;
+}
+
+.box h3{
+    font-size: 15px;
+    letter-spacing: 8px;
+    margin-bottom: 8px;
+    color: #4C516D;
+    letter-spacing: 1px;
+}
+
+.box h6{
+    font-style: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #4C516D;
+    word-spacing: 0.1cm;
+}
+
+section {
+    padding: 100px 8%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px,auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+
+.box {
+    position: relative;
+    background: #D4F1F4;
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0.5rem;  
+}
+
+.box img{
+    width: 100%;
+    height: 450px;
+    background-size: 100% 100%;
+}
+
+.box h4{
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.box h6{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.heading h1{
+    text-align: center;
+    color: #189AB4;
+}
+
+/*About Page*/
+#about-head h1{
+    color: #189AB4;
+}
+
+#about-store {
+    text-align: center;
+}
+
+#about-store h1{
+    color: #189AB4;
+}
+
+#about-store .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-store .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*Contact Page*/
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details span {
+    font-style: 12px;
+    color: #4C516D;
+    font-size: 45px;
+}
+
+#contact-details .details h3{
+    font-style: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+    color: #4C516D;
+    font-size: 20px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*Blog Page*/
+#blog-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px,auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+    background-color: #FAECE2;
+}
+#blog-container .blogs{
+    width: 100%;
+}
+
+#blog-container .blogs img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+#blog-container .blogs .post{
+    padding-bottom: 80px;
+}
+
+
+#blog-container .blogs .post h3{
+    color: #189AB4;
+    padding: 15px 0 10px 0;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#blog-container .blogs .post p{
+    color: #4C516D;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-weight: 600;
+    word-spacing: 0.1cm;
+    background-color: #ADD8E6;
+    color: #4C516D;
+    border-radius: 0.5rem;
+}
+
+/*Blog Checkbox*/
+#checkbox1 {
+    display: none;
+}
+
+#checkbox1:checked ~ .checkboxcontent{
+    display: block;
+}
+
+#checkbox1:checked ~ label {
+    display: none;
+}
+
+#checkbox2 {
+    display: none;
+}
+
+#checkbox2:checked ~ .checkboxcontent{
+    display: block;
+}
+
+#checkbox2:checked ~ label {
+    display: none;
+}
+
+#checkbox3 {
+    display: none;
+}
+
+#checkbox3:checked ~ .checkboxcontent{
+    display: block;
+}
+
+#checkbox3:checked ~ label {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ADD8E6;
+    color: white;
+    padding: 3px 13px;
+    border-radius: 0.5rem;
+    margin-top: 12px;
+}
+
+#readid {
+    display: none;
+}
